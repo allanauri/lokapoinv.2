@@ -3,7 +3,7 @@
 
     //$('.sidenav').sidenav({edge:'right'});
     $('.parallax').parallax();
-    $(".button-collapse").sideNav();
+    //$(".button-collapse").sideNav();
     //$(".dropdown-trigger").dropdown({constrainWidth: false});
     //$('.slider').slider({height: 500, interval: 5000});
     //$('.carousel').carousel();
