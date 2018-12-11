@@ -5,6 +5,22 @@
  *
  * Made By MaterializeCSS.com
  */
+.gede{
+	font-size: 20px;
+}
+
+.limit2{
+		width: 50%;
+		height: 50%;
+		margin-top: 20px;
+}
+
+ .limit{
+   max-width: 50px;
+   max-height: 50px;
+	 margin-top: 5px;
+ }
+
 #search{
 	border-radius: 20px;
 	margin-left: 5px;
@@ -30,6 +46,10 @@
 	margin-right: 7px;
 }
 
+.geser3{
+	margin-right: 100px;
+}
+
 .brand-logo{
 	width: auto;
 	height: auto;
@@ -41,7 +61,7 @@
 
 .logo {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 15px;
     width: 18%;
     height: 18%;
