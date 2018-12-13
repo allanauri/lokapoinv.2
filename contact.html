@@ -16,37 +16,190 @@
 
 	<body>
 
-<!-- Dropdown Structure -->
+<!-- Dropdown Structure
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="#!">one</a></li>
   <li><a href="#!">two</a></li>
   <li class="divider"></li>
   <li><a href="#!">three</a></li>
-</ul>
+</ul>  -->
 <nav>
   <div class="nav-wrapper white">
     <a href="#!" class="brand-logo left">
 			<img src="images/logo2.jpeg" class="logo" alt="Logo">
 		</a>
+
 		<ul id="nav-mobile" class="sidenav">
-			<li><a class="orange-text text-darken-3" href="#!">Home</a></li>
+				<li><a class="orange-text text-darken-3 modal-trigger" href="#modal1">Login</a></li>
+				<li class="divider"></li>
+				<li><a class="orange-text text-darken-3 modal-trigger" href="#modal2">Sign Up</a></li>
+					<!-- sudah login
+					<li><a class="orange-text text-darken-3" href="#!">Home</a></li>
 					<li class="divider"></li>
 					<li><a class="orange-text text-darken-3" href="#!">My Booking</a></li>
 					<li class="divider"></li>
 					<li><a class="orange-text text-darken-3" href="#!">My Inbox</a></li>
 					<li class="divider"></li>
-					<li><a class="orange-text text-darken-3" href="#!">About us</a></li>
+					<li><a class="orange-text text-darken-3" href="#!">About us</a></li> -->
 		</ul>
 		<a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="#"><i class="material-icons">search</i></a></li>
-      <li><a href="#"><i class="material-icons">chat_bubble_outline</i></a></li>
+
+			<!-- Sudah login
+			<li><a href="#"><i class="material-icons">chat_bubble_outline</i></a></li>
 			<li><a href="#"><i class="material-icons">favorite_border</i></a></li>
-      <!-- Dropdown Trigger -->
-      <li><img src="images/pp.png" alt="pp" class="circle responsive-img limit dropdown-trigger" data-target="dropdown1"></li>
+			<li><img src="images/pp.png" alt="pp" class="circle responsive-img limit dropdown-trigger" data-target="dropdown1"></li> -->
+
+			<li><a class="modal-trigger" href="#modal2" ><strong>Sign Up</strong></a></li>
+			<li><a class="modal-trigger" href="#modal1" ><strong>Login</strong></a></li>
     </ul>
   </div>
 </nav>
+<!-- Modal Trigger
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+<!-- Modal Structure -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4 class="center">Login</h4>
+			<div class="container">
+					<div class="row">
+						<div class="col l12 s12 center-align">
+							<a class="btn-flat cyan darken-2 white-text" style="width:100%;" id="loginfb"><i class="fa fa-facebook"></i> &nbsp; <b>Login with facebook</b></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l12 s12 center-align">
+							<a class="btn-flat cyan darken-2 white-text" style="width:100%;" id="loginfb"><i class="fa fa-google"></i> &nbsp; <b>Login with google</b></a>
+						</div>
+					</div>
+					<li class="divider"></li>
+					<br>
+					<div class="row">
+						<div class="col l12 s12">
+							<form>
+								<div class="bord2">
+									<input name="email" id="emaillogin" type="text" placeholder="Email Address">
+								</div>
+							</form>
+							<div class="row">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l12 s12">
+					<form>
+						<div class="bord2">
+							<input name="pass" id="passlogin" type="text" placeholder="Password">
+						</div>
+					</form>
+				</div>
+			</div>
+				<div class="col 16 s6">
+					<label>
+						<input type="checkbox" class="filled-in" checked="checked" />
+						<span>Remember me</span>
+					</label>
+				</div>
+				<div class="col 16 s6 right-align">
+					<a>Show Password</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l12 s12">
+						<center><a href="#!" class="modal-close grad white-text btn-flat" style="width:100%;"><b>Login</b></a></center>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l12 s12 center-align">
+					<a>Forgot password?</a>
+				</div>
+			</div>
+			<li class="divider"></li>
+			<br>
+			<div class="row">
+				<div class="col l12 s12 center-align">
+					Don't have an account? <a href="#modal2" class="modal-close modal-trigger">Signup</a>
+				</div>
+			</div>
+	</div>
+		</div>
+	</div>
+
+	<div id="modal2" class="modal">
+		<div class="modal-content">
+			<h4 class="center">Signup</h4>
+			<div class="container">
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						Signup with <a>Facebook</a> or <a>Google</a>
+					</div>
+				</div>
+				<li class="divider"></li>
+			</br>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<form>
+							<div class="bord2">
+								<input name="email" id="emailsignup" type="text" placeholder="Email Address">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<form>
+							<div class="bord2">
+								<input name="first_name" id="fnamesignup" type="text" placeholder="First Name">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<form>
+							<div class="bord2">
+								<input name="last_name" id="lnamesignup" type="text" placeholder="Last Name">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<form>
+							<div class="bord2">
+								<input name="pass" id="passsignup" type="text" placeholder="Create Password">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 right-align">
+						<a>Show Password</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 right-align">
+							<center><a href="#!" class="modal-close grad white-text btn-flat" style="width:100%;"><b>Signup</b></a></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						By signing up you agree to Lokapoin <a>terms and privacy policy</a>
+					</div>
+				</div>
+				<li class="divider"></li>
+				</br>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						Already have a Lokapoin account? <a class="modal-trigger modal-close" href="#modal1">Login</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
 	<div class="slider">
 			<ul class="slides">
 					<li>
