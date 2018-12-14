@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Lokapoin
+		// CSS
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(href='stylesheets/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+	body
+		nav.white(role='navigation')
+			.nav-wrapper.container
+				a#logo-container.brand-logo.left(href='/')
+					img.logo(src='images/logo.png', alt='Logo')
+				ul#nav-mobile.sidenav
+					li
+						a.orange-text.text-darken-3 Login
+					li.divider
+					li
+						form(method='get',action='#')
+							.input-field
+								input#username_mobile.orange-text.text-darken-3(type='email', placeholder='Email here...', required='')
+								input#password_mobile.orange-text.text-darken-3(type='password', placeholder='Password here...', required='')
+							center
+								input.btn.orange.darken-3.white-text(type='submit', value='Submit')
+				a.sidenav-trigger(href='#', data-target='nav-mobile')
+					i.material-icons menu
+				ul.right.hide-on-med-and-down
+					// <li><a href="#">Navbar Link</a></li>
+					li
+						i#search_button.material-icons.orange-text.text-darken-3 search
+					li
+						form
+							.input-field
+								input#search.orange-text.text-darken-3(type='text', required='')
+					li
+						i#close.material-icons.orange-text.text-darken-3 close
+					li
+						a.orange-text.text-darken-3(href='login')
+							| Login
+		block content

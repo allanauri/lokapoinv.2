@@ -1,0 +1,296 @@
+doctype html
+html(lang='en')
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title
+			| Lokapoin - Lokapoin Indonesia
+		// CSS
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(href='stylesheets/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+	body
+		// Modal Structure
+		#modal1.modal
+			.modal-content
+				h4.center Login
+				.container
+					.row
+						.col.l12.s12.center-align
+							a#loginfb.btn-flat.cyan.darken-2.white-text(style='width:100%;')
+								i.fa.fa-facebook &nbsp; &nbsp;
+								b Login with facebook
+					.row
+						.col.l12.s12.center-align
+							a#loginfb.btn-flat.cyan.darken-2.white-text(style='width:100%;')
+								i.fa.fa-google &nbsp; &nbsp;
+								b Login with google
+					li.divider
+					br
+					.row
+						.col.l12.s12
+							.bord2
+								form
+									input#emaillogin(name='email', type='text', placeholder='Email Address')
+					.row
+						.col.l12.s12
+							.bord2
+								form
+									input#passlogin(name='pass', type='text', placeholder='Password')
+					.row
+						.col.16.s6
+							label
+								input.filled-in(type='checkbox', checked='checked')
+								span Remember me
+						.col.16.s6.right-align
+							a Show Password
+					.row
+						.col.l12.s12
+							center
+								a.modal-close.grad.white-text.btn-flat(href='#!', style='width:100%;')
+									b Login
+					.row
+						.col.l12.s12.center-align
+							a Forgot password?
+					li.divider
+					br
+					.row
+						.col.l12.s12.center-align
+							| Don't have an account? 
+							a.modal-close.modal-trigger(href='#modal2') Signup
+		#modal2.modal
+			.modal-content
+				h4.center Signup
+				.container
+					.row
+						.col.l12.s12.center-align
+							| Signup with 
+							a Facebook
+							|  or 
+							a Google
+					li.divider
+					br
+					.row
+						.col.l12.s12.center-align
+							.bord2
+								form
+									input#emailsignup.geser2(name='email', type='text', placeholder='Email Address')
+					.row
+						.col.l12.s12.center-align
+							.bord2
+								form
+									input#fnamesignup(name='first_name', type='text', placeholder='First Name')
+					.row
+						.col.l12.s12.center-align
+							.bord2
+								form
+									input#lnamesignup(name='last_name', type='text', placeholder='Last Name')
+					.row
+						.col.l12.s12.center-align
+							.bord2
+								form
+									input#passsignup(name='pass', type='text', placeholder='Create Password')
+					.row
+						.col.l12.s12.right-align
+							a Show Password
+					.row
+						.col.l12.s12.right-align
+							center
+								a.modal-close.grad.white-text.btn-flat(href='#!', style='width:100%;')
+									b Signup
+					.row
+						.col.l12.s12.center-align
+							| By signing up you agree to Lokapoin 
+							a terms and privacy policy
+					li.divider
+					br
+					.row
+						.col.l12.s12.center-align
+							| Already have a Lokapoin account? 
+							a.modal-trigger.modal-close(href='#modal1') Login
+		.parallax-container
+			.brand-logo.left
+				a(href='/')
+					img.logo(src='images/logo.png', alt='Logo')
+			ul.right.hide-on-med-and-down.geser
+				li
+					a.white-text(href='#')
+						b Become a Host &nbsp;
+					a.white-text.modal-trigger(href='#modal2')
+						b Signup &nbsp;
+					a.white-text.modal-trigger(href='#modal1')
+						b Login
+			.parallax
+				img(src='images/lokapoin_banner.png')
+			//
+				<ul id="nav-mobile" class="sidenav">
+				<li><a class="orange-text text-darken-3" href="#!">Home</a></li>
+				<li class="divider"></li>
+				<li><a class="orange-text text-darken-3" href="#!">My Booking</a></li>
+				<li class="divider"></li>
+				<li><a class="orange-text text-darken-3" href="#!">My Inbox</a></li>
+				<li class="divider"></li>
+				<li><a class="orange-text text-darken-3" href="#!">About us</a></li>
+				</ul>
+		.parallax-container2.valign-wrapper.grad
+			.section.no-pad-bot
+				.container
+					.row.center.hide-on-med-and-up
+						.col.s12
+							h5 Lokapoin
+					.row.center.hide-on-med-and-down
+						.col.l2
+						.col.l1
+							h6 WHERE
+						.col.l2.bord1
+							form
+								input#kemana.white-text(type='text')
+						.col.l1
+							h6 WHEN
+						.col.l2.bord1
+							form
+								input#kapan.white-text(type='text')
+						#search.col.l2.orange.white-text
+							.input-field
+								b Search
+						br
+		.container-fluid
+			.row
+				.col.l12.s12
+					h4.left
+						b Explore Lokapoin
+			.row
+				.col.l4.s12
+					a(href='#')
+						img(style='width: 100%;height: 100%;', src='images/lokabasic.jpg')
+					p Get your expected standard of night stay
+				.col.l4.s12
+					a(href='#')
+						img(style='width: 100%;height: 100%;', src='images/lokafolk.jpg')
+					p Get your expected standard of night stay
+				.col.l4.s12
+					a(href='#')
+						img(style='width: 100%;height: 100%;', src='images/lokavibe.jpg')
+					p Get your expected standard of night stay
+			.row
+				.col.l12.s12
+					h4.left
+						b LokaBasic
+			.row
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/riau-house1.jpg')
+					h6.orange-text LokaBasic
+					h5 De Riau House
+					h6 Starts from IDR 1.650.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/published/imahkolot6.jpg?1537586190')
+					h6.orange-text LokaBasic
+					h5 Kolot House
+					h6 Starts from IDR 980.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/pele-house-5_orig.jpg')
+					h6.orange-text LokaBasic
+					h5 Pele House
+					h6 Starts from IDR 150.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/lokastay9_orig.jpg')
+					h6.orange-text LokaBasic
+					h5 Halimun House
+					h6 Starts from IDR 325.000
+			.row
+				.col.l12.s12
+					h4.left
+						b LokaFolk
+			.row
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/3.jpg')
+					h6.orange-text LokaFolk
+					h5 Ceu Yati House
+					h6 Starts from IDR 185.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/3.jpg')
+					h6.orange-text LokaFolk
+					h5 Ceu Yati House
+					h6 Starts from IDR 185.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/lokastay3.jpg')
+					h6.orange-text LokaFolk
+					h5 Lentera House and Villa
+					h6 Starts from IDR 400.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/lokastay3.jpg')
+					h6.orange-text LokaFolk
+					h5 Lentera House and Villa
+					h6 Starts from IDR 400.000
+			.row
+				.col.l12.s12
+					h4.left
+						b LokaVibe
+			.row
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/9_2.jpg')
+					h6.orange-text LokaVibe
+					h5 Raben House
+					h6 Starts from IDR 325.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/9_2.jpg')
+					h6.orange-text LokaVibe
+					h5 Raben House
+					h6 Starts from IDR 325.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/9_2.jpg')
+					h6.orange-text LokaVibe
+					h5 Raben House
+					h6 Starts from IDR 325.000
+				.col.l3.s6
+					img(style='width: 100%;height: 100%;', src='http://lokapoin.id/uploads/1/2/1/4/121419309/9_2.jpg')
+					h6.orange-text LokaVibe
+					h5 Raben House
+					h6 Starts from IDR 325.000
+			.divider
+			footer.page-footer.white
+				.container
+					.row
+						.col.l4.s12
+							h5.black-text Lokapoin
+							p
+								a.black-text(href='about') About
+								br
+								a.black-text(a='', href='#') Career
+								br
+								a.black-text(a='', href='#') Press
+								br
+								a.black-text(a='', href='#') Policies
+								br
+								a.black-text(a='', href='#') Help
+						.col.l4.s12
+							h5.black-text Joining Lokapoin
+							p.black-text
+								| Become a Host
+						.col.l4.s12
+							h5.black-text Our Social Media
+							ul
+								.container
+									li
+										a.black-text(href='#!')
+											h6
+												i.fa.fa-instagram
+												|   Lokapoin
+									li
+										a.black-text(href='#!')
+											h6
+												i.fa.fa-facebook
+												|    Lokapoin
+									li
+										a.black-text(href='#!')
+											h6
+												i.fa.fa-youtube
+												|   Lokapoin
+				.footer-copyright
+					.container.black-text
+						center PT. Lokapoin Kreasi Indonesia
+			// Scripts
+			script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+			script(src='javascripts/materialize.js')
+			script(src='javascripts/init.js')

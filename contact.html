@@ -16,54 +16,69 @@
 
 	<body>
 
-<!-- Dropdown Structure
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>  -->
-<nav>
-  <div class="nav-wrapper white">
-    <a href="#!" class="brand-logo left">
-			<img src="images/logo2.jpeg" class="logo" alt="Logo">
-		</a>
+		<!-- Dropdown Structure
+		<ul id="dropdown1" class="dropdown-content">
+		  <li><a href="#!">one</a></li>
+		  <li><a href="#!">two</a></li>
+		  <li class="divider"></li>
+		  <li><a href="#!">three</a></li>
+		</ul>  -->
 
-		<ul id="nav-mobile" class="sidenav">
-				<li><a class="orange-text text-darken-3 modal-trigger" href="#modal1">Login</a></li>
-				<li class="divider"></li>
-				<li><a class="orange-text text-darken-3 modal-trigger" href="#modal2">Sign Up</a></li>
-					<!-- sudah login
-					<li><a class="orange-text text-darken-3" href="#!">Home</a></li>
+		<nav>
+			<div class="nav-wrapper white">
+				<a href="#!" class="brand-logo left">
+					<img src="images/logo2.jpeg" class="logo" alt="Logo">
+				</a>
+
+				<ul id="nav-mobile" class="sidenav">
+					<li>
+						<a class="orange-text text-darken-3 modal-trigger" href="#modal1">Login</a>
+					</li>
 					<li class="divider"></li>
-					<li><a class="orange-text text-darken-3" href="#!">My Booking</a></li>
-					<li class="divider"></li>
-					<li><a class="orange-text text-darken-3" href="#!">My Inbox</a></li>
-					<li class="divider"></li>
-					<li><a class="orange-text text-darken-3" href="#!">About us</a></li> -->
-		</ul>
-		<a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="#"><i class="material-icons">search</i></a></li>
+					<li>
+						<a class="orange-text text-darken-3 modal-trigger" href="#modal2">Sign Up</a>
+					</li>
+							<!-- sudah login
+							<li><a class="orange-text text-darken-3" href="#!">Home</a></li>
+							<li class="divider"></li>
+							<li><a class="orange-text text-darken-3" href="#!">My Booking</a></li>
+							<li class="divider"></li>
+							<li><a class="orange-text text-darken-3" href="#!">My Inbox</a></li>
+							<li class="divider"></li>
+							<li><a class="orange-text text-darken-3" href="#!">About us</a></li> -->
+				</ul>
+						
+				<a href="#" data-target="nav-mobile" class="sidenav-trigger right">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a href="#">
+							<i class="material-icons">search</i>
+						</a>
+					</li>
 
-			<!-- Sudah login
-			<li><a href="#"><i class="material-icons">chat_bubble_outline</i></a></li>
-			<li><a href="#"><i class="material-icons">favorite_border</i></a></li>
-			<li><img src="images/pp.png" alt="pp" class="circle responsive-img limit dropdown-trigger" data-target="dropdown1"></li> -->
+					<!-- Sudah login
+					<li><a href="#"><i class="material-icons">chat_bubble_outline</i></a></li>
+					<li><a href="#"><i class="material-icons">favorite_border</i></a></li>
+					<li><img src="images/pp.png" alt="pp" class="circle responsive-img limit dropdown-trigger" data-target="dropdown1"></li> -->
 
-			<li><a class="modal-trigger" href="#modal2" ><strong>Sign Up</strong></a></li>
-			<li><a class="modal-trigger" href="#modal1" ><strong>Login</strong></a></li>
-    </ul>
-  </div>
-</nav>
-<!-- Modal Trigger
-<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+					<li>
+						<a class="modal-trigger" href="#modal2" ><b>Sign Up</b></a>
+					</li>
+					<li>
+						<a class="modal-trigger" href="#modal1" ><b>Login</b></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Modal Trigger
 
-<!-- Modal Structure -->
-	<div id="modal1" class="modal">
-		<div class="modal-content">
-			<h4 class="center">Login</h4>
-			<div class="container">
+		Modal Structure -->
+		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<h4 class="center">Login</h4>
+				<div class="container">
 					<div class="row">
 						<div class="col l12 s12 center-align">
 							<a class="btn-flat cyan darken-2 white-text" style="width:100%;" id="loginfb"><i class="fa fa-facebook"></i> &nbsp; <b>Login with facebook</b></a>
@@ -78,257 +93,273 @@
 					<br>
 					<div class="row">
 						<div class="col l12 s12">
-							<form>
-								<div class="bord2">
+							<div class="bord2">
+								<form>
 									<input name="email" id="emaillogin" type="text" placeholder="Email Address">
-								</div>
-							</form>
-							<div class="row">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col l12 s12">
-					<form>
-						<div class="bord2">
-							<input name="pass" id="passlogin" type="text" placeholder="Password">
+								</form>
+							</div>
 						</div>
-					</form>
+					</div>
+					<div class="row">
+						<div class="col l12 s12">
+							<div class="bord2">
+								<form>
+									<input name="pass" id="passlogin" type="text" placeholder="Password">
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col 16 s6">
+							<label>
+								<input type="checkbox" class="filled-in" checked="checked" />
+								<span>Remember me</span>
+							</label>
+						</div>
+						<div class="col 16 s6 right-align">
+							<a>Show Password</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l12 s12">
+							<center><a href="#!" class="modal-close grad white-text btn-flat" style="width:100%;"><b>Login</b></a></center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l12 s12 center-align">
+							<a>Forgot password?</a>
+						</div>
+					</div>
+					<li class="divider"></li>
+					<br>
+					<div class="row">
+						<div class="col l12 s12 center-align">
+							Don't have an account? <a href="#modal2" class="modal-close modal-trigger">Signup</a>
+						</div>
+					</div>
 				</div>
 			</div>
-				<div class="col 16 s6">
-					<label>
-						<input type="checkbox" class="filled-in" checked="checked" />
-						<span>Remember me</span>
-					</label>
-				</div>
-				<div class="col 16 s6 right-align">
-					<a>Show Password</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col l12 s12">
-						<center><a href="#!" class="modal-close grad white-text btn-flat" style="width:100%;"><b>Login</b></a></center>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col l12 s12 center-align">
-					<a>Forgot password?</a>
-				</div>
-			</div>
-			<li class="divider"></li>
-			<br>
-			<div class="row">
-				<div class="col l12 s12 center-align">
-					Don't have an account? <a href="#modal2" class="modal-close modal-trigger">Signup</a>
-				</div>
-			</div>
-	</div>
 		</div>
-	</div>
 
-	<div id="modal2" class="modal">
-		<div class="modal-content">
-			<h4 class="center">Signup</h4>
-			<div class="container">
-				<div class="row">
-					<div class="col l12 s12 center-align">
-						Signup with <a>Facebook</a> or <a>Google</a>
+		<div id="modal2" class="modal">
+			<div class="modal-content">
+				<h4 class="center">Signup</h4>
+				<div class="container">
+					<div class="row">
+						<div class="col l12 s12 center-align">
+							Signup with <a>Facebook</a> or <a>Google</a>
+						</div>
 					</div>
-				</div>
-				<li class="divider"></li>
-			</br>
-				<div class="row">
-					<div class="col l12 s12 center-align">
-						<form>
+					<li class="divider"></li>
+					<br>
+					<div class="row">
+						<div class="col l12 s12 center-align">
 							<div class="bord2">
-								<input name="email" id="emailsignup" type="text" placeholder="Email Address">
+								<form>
+									<input name="email" id="emailsignup" type="text" class="geser2" placeholder="Email Address">
+								</form>
 							</div>
-						</form>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col l12 s12 center-align">
-						<form>
+					<div class="row">
+						<div class="col l12 s12 center-align">
 							<div class="bord2">
-								<input name="first_name" id="fnamesignup" type="text" placeholder="First Name">
+								<form>
+									<input name="first_name" id="fnamesignup" type="text" placeholder="First Name">
+								</form>
 							</div>
-						</form>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col l12 s12 center-align">
-						<form>
+					<div class="row">
+						<div class="col l12 s12 center-align">
 							<div class="bord2">
-								<input name="last_name" id="lnamesignup" type="text" placeholder="Last Name">
+								<form>
+									<input name="last_name" id="lnamesignup" type="text" placeholder="Last Name">
+								</form>
 							</div>
-						</form>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col l12 s12 center-align">
-						<form>
+					<div class="row">
+						<div class="col l12 s12 center-align">
 							<div class="bord2">
-								<input name="pass" id="passsignup" type="text" placeholder="Create Password">
+								<form>
+									<input name="pass" id="passsignup" type="text" placeholder="Create Password">
+								</form>
 							</div>
-						</form>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col l12 s12 right-align">
-						<a>Show Password</a>
+					<div class="row">
+						<div class="col l12 s12 right-align">
+							<a>Show Password</a>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col l12 s12 right-align">
+					<div class="row">
+						<div class="col l12 s12 right-align">
 							<center><a href="#!" class="modal-close grad white-text btn-flat" style="width:100%;"><b>Signup</b></a></center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l12 s12 center-align">
+							By signing up you agree to Lokapoin <a>terms and privacy policy</a>
+						</div>
+					</div>
+					<li class="divider"></li>
+					<br>
+					<div class="row">
+						<div class="col l12 s12 center-align">
+							Already have a Lokapoin account? <a class="modal-trigger modal-close" href="#modal1">Login</a>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col l12 s12 center-align">
-						By signing up you agree to Lokapoin <a>terms and privacy policy</a>
-					</div>
-				</div>
-				<li class="divider"></li>
-				</br>
-				<div class="row">
-					<div class="col l12 s12 center-align">
-						Already have a Lokapoin account? <a class="modal-trigger modal-close" href="#modal1">Login</a>
-					</div>
-				</div>
-
 			</div>
 		</div>
-	</div>
 
-	<div class="slider">
+		<div class="slider">
 			<ul class="slides">
-					<li>
-						<img src="http://lokapoin.id/uploads/1/2/1/4/121419309/background-images/1831624399.jpg">
+				<li>
+					<img src="http://lokapoin.id/uploads/1/2/1/4/121419309/background-images/1831624399.jpg">
 					<div class="caption center-align black-text text-darken-2">
 						<h3>Know More About Us</h3>
 					</div>
 				</li>
 			</ul>
-			</div>
-	<div class="container">
-		<div class="row">
-			<div class="col l4 s6">
-				<h4 class="left"><b>About Us</b></h4>
-			</div>
-			<div class="col l8 s6">
-				<p class="left-align gede">Founded in 2017, Lokapoin is a travel startup ​focuses on providing local experience through homestay and trip services for better local empowerment through tourism</p>
-			</div>
 		</div>
-		<div class="row">
-			<div class="col l12 s12">
-				<h4 class="left"><b>Our Team</b></h4>
-			</div>
-			<div class="col l4 s12">
-				<div class="icon-block">
-					<img style="width: 100%;height: 100%;" src="images/cahyo.jpg">
-					<h5 class="center">M. Nurcahyo</h5>
-					<p class="center light">Chief Executive Officer</p>
-				</div>
-			</div>
-			<div class="col l4 s12">
-				<div class="icon-block">
-					<img style="width: 100%;height: 100%;" src="images/keke.jpg">
-					<h5 class="center">Keke Genio</h5>
-					<p class="center light">Chief Marketing Officer</p>
-				</div>
-			</div>
-			<div class="col l4 s12">
-				<div class="icon-block">
-					<img style="width: 100%;height: 100%;" src="images/kuncoro.jpg">
-					<h5 class="center">Kuncoro Pinardi</h5>
-					<p class="center light">Chief Technology Officer</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col l12 s12">
-				<h4 class="left"><b>News</b></h4>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col l6 s12">
-				<div class="grad right-align">
-					<img class="geser3 limit2" src="images/slider4.jpg" alt="news">
-					<h6 class="geser3">From local wisdom to global market</h6>
-					</br>
-				</div>
-			</div>
-			<div class="col l6 s12 center-align">
-				<p>From local wisdom to global market</p>
-				<p>From local wisdom to global market</p>
-				<p>From local wisdom to global market</p>
-				<p>From local wisdom to global market</p>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col l12 s12">
-				<h4 class="left"><b>Testimonies</b></h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col l12 s12 center-align">
-				<h5>"Thanks Lokapoin!</br>
-					We're happy that we did it!</br>
-					Every local touches just impressive"
-				</h5>
-			</div>
-		</div>
-	</div>
-	</br>
-	<div class="divider"></div>
-	<footer class="page-footer white">
+
 		<div class="container">
 			<div class="row">
-				<div class="col l4 s12">
-					<h5 class="black-text">Lokapoin</h5>
-					<p class="black-text">
-						About
-						</br>Career
-						</br>Press
-						</br>Policies
-						</br>Help
-					</p>
+				<div class="col l4 s6">
+					<h4 class="left"><b>About Us</b></h4>
+				</div>
+				<div class="col l8 s6">
+					<p class="left-align gede">Founded in 2017, Lokapoin is a travel startup ​focuses on providing local experience through homestay and trip services for better local empowerment through tourism</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l12 s12">
+					<h4 class="left"><b>Our Team</b></h4>
 				</div>
 				<div class="col l4 s12">
-					<h5 class="black-text">Joining Lokapoin</h5>
-						<p class="black-text">
-							Become a Host
+					<div class="icon-block">
+						<img style="width: 100%;height: 100%;" src="images/cahyo.jpg">
+						<h5 class="center">M. Nurcahyo</h5>
+						<p class="center light">Chief Executive Officer</p>
+					</div>
+				</div>
+				<div class="col l4 s12">
+					<div class="icon-block">
+						<img style="width: 100%;height: 100%;" src="images/keke.jpg">
+						<h5 class="center">Keke Genio</h5>
+						<p class="center light">Chief Marketing Officer</p>
+					</div>
+				</div>
+				<div class="col l4 s12">
+					<div class="icon-block">
+						<img style="width: 100%;height: 100%;" src="images/kuncoro.jpg">
+						<h5 class="center">Kuncoro Pinardi</h5>
+						<p class="center light">Chief Technology Officer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col l12 s12">
+					<h4 class="left"><b>News</b></h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col l6 s12">
+					<div class="grad right-align">
+						<img class="geser3 limit2" src="images/slider4.jpg" alt="news">
+						<h6 class="geser3">From local wisdom to global market</h6>
+						<br>
+					</div>
+				</div>
+				<div class="col l6 s12 center-align">
+					<p>From local wisdom to global market</p>
+					<p>From local wisdom to global market</p>
+					<p>From local wisdom to global market</p>
+					<p>From local wisdom to global market</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col l12 s12">
+					<h4 class="left"><b>Testimonies</b></h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col l12 s12 center-align">
+					<h5>
+						"Thanks Lokapoin!
+						<br>
+							We're happy that we did it!
+						<br>
+							Every local touches just impressive"
+					</h5>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="divider"></div>
+		<footer class="page-footer white">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 s12">
+						<h5 class="black-text">Lokapoin</h5>
+						<p>
+							<a class="black-text" href="contact.html">About</a>
+							<br>
+							<a a class="black-text" href="#">Career</a>
+							<br>
+							<a a class="black-text" href="#">Press</a>
+							<br>
+							<a a class="black-text" href="#">Policies</a>
+							<br>
+							<a a class="black-text" href="#">Help</a>
 						</p>
-				</div>
-				<div class="col l4 s12">
-					<h5 class="black-text">Our Social Media</h5>
-					<ul>
-						<div class="container">
-							<li>
-								<a class="black-text" href="#!"><h6><i class="fa fa-instagram"></i>&nbsp; Lokapoin</h6></a>
-							</li>
-							<li>
-								<a class="black-text" href="#!"><h6><i class="fa fa-facebook"></i>&nbsp;&nbsp; Lokapoin</h6></a>
-							</li>
-							<li><a class="black-text" href="#!"><h6><i class="fa fa-youtube"></i>&nbsp; Lokapoin</h6></a></li>
-						</div>
-					</ul>
+					</div>
+					<div class="col l4 s12">
+						<h5 class="black-text">Joining Lokapoin</h5>
+							<p class="black-text">
+								Become a Host
+							</p>
+					</div>
+					<div class="col l4 s12">
+						<h5 class="black-text">Our Social Media</h5>
+						<ul>
+							<div class="container">
+								<li>
+									<a class="black-text" href="#!"><h6><i class="fa fa-instagram"></i>&nbsp; Lokapoin</h6></a>
+								</li>
+								<li>
+									<a class="black-text" href="#!"><h6><i class="fa fa-facebook"></i>&nbsp;&nbsp; Lokapoin</h6></a>
+								</li>
+								<li>
+									<a class="black-text" href="#!"><h6><i class="fa fa-youtube"></i>&nbsp; Lokapoin</h6></a>
+								</li>
+							</div>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container black-text">
-				<center>PT. Lokapoin Kreasi Indonesia</center>
+			<div class="footer-copyright">
+				<div class="container black-text">
+					<center>PT. Lokapoin Kreasi Indonesia</center>
+				</div>
 			</div>
-		</div>
+		</footer>
+
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="javascripts/materialize.js"></script>
 	<script src="javascripts/init.js"></script>
-  </body>
+	</body>
 </html>
