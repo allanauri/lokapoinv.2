@@ -23,7 +23,7 @@ html(lang='en')
 								b Login with facebook
 					.row
 						.col.l12.s12.center-align
-							a#loginfb.btn-flat.cyan.darken-2.white-text(style='width:100%;')
+							a#logingoogle.btn-flat.cyan.darken-2.white-text(style='width:100%;')
 								i.fa.fa-google &nbsp; &nbsp;
 								b Login with google
 					li.divider
@@ -48,7 +48,7 @@ html(lang='en')
 					.row
 						.col.l12.s12
 							center
-								a.modal-close.grad.white-text.btn-flat(href='#!', style='width:100%;')
+								a#login.modal-close.grad.white-text.btn-flat(href='#!', style='width:100%;')
 									b Login
 					.row
 						.col.l12.s12.center-align
@@ -137,8 +137,12 @@ html(lang='en')
 			.section.no-pad-bot
 				.container
 					.row.center.hide-on-med-and-up
-						.col.s12
-							h5 Lokapoin
+						.col.s6
+							a.white-text.modal-trigger(href='#modal2')
+								b Signup
+						.col.s6
+							a.white-text.modal-trigger(href='#modal2')
+								b Login
 					.row.center.hide-on-med-and-down
 						.col.l2
 						.col.l1
@@ -293,4 +297,6 @@ html(lang='en')
 			// Scripts
 			script(src='https://code.jquery.com/jquery-2.1.1.min.js')
 			script(src='javascripts/materialize.js')
+			script(src='javascripts/jquery.redirect.js')
 			script(src='javascripts/init.js')
+			script(src='javascripts/login.js')

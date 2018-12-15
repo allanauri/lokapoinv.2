@@ -1,20 +1,13 @@
 (function($){
   $(function(){
     document.querySelector('#login').addEventListener('click', function (){
-      var email = $('#email').val();
-      var password = $('#password').val();
-      var level = $('#level').val();
-      $.post("/login",{
+      var email = $('#emaillogin').val();
+      var password = $('#passlogin').val();
+      $.post("/",{
         email: email,
-        pass: password,
-        lvl: level
+        pass: password
       }, function(data){
-        if(data.alert!==undefined){
-            alert(data.alert);
-          }
-          else{
-            $.redirect("/", {email: email, pass: password, lvl: level}, "POST");
-          }
+        $.redirect("/", {email: email, pass: password}, "POST");
       });
     });
   }); // end of document ready
