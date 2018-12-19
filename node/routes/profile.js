@@ -4,11 +4,11 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
 		if(req.session.user==undefined){
-			res.render('about');
+			res.redirect('/');
 		}
 		else{
 			var user = req.session.user;
-			res.render('about2',{user});
+			res.render('profile',{user});
 		}
 	});
 

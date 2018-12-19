@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>
+		Lokapoin - Lokapoin Indonesia
+	</title>
+	<!-- CSS-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href="stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+	<!-- Dropdown Structure
+	<ul id="dropdown1" class="dropdown-content">
+	<li><a href="#!">one</a></li>
+	<li><a href="#!">two</a></li>
+	<li class="divider"></li>
+	<li><a href="#!">three</a></li>
+</ul>  -->
+
+	<nav>
+		<div class="nav-wrapper white">
+			<a href="/" class="brand-logo left">
+				<img src="images/logo2.jpeg" class="logo" alt="Logo">
+			</a>
+
+			<ul id="nav-mobile" class="sidenav">
+				<li>
+					<a class="orange-text text-darken-3 modal-trigger" href="#modal1">Login</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a class="orange-text text-darken-3 modal-trigger" href="#modal2">Sign Up</a>
+				</li>
+				<!-- sudah login
+				<li><a class="orange-text text-darken-3" href="#!">Home</a></li>
+				<li class="divider"></li>
+				<li><a class="orange-text text-darken-3" href="#!">My Booking</a></li>
+				<li class="divider"></li>
+				<li><a class="orange-text text-darken-3" href="#!">My Inbox</a></li>
+				<li class="divider"></li>
+				<li><a class="orange-text text-darken-3" href="#!">About us</a></li> -->
+			</ul>
+
+			<a href="#" data-target="nav-mobile" class="sidenav-trigger right">
+				<i class="material-icons">menu</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li>
+					<a href="#">
+						<i class="material-icons">search</i>
+					</a>
+				</li>
+
+				<!-- Sudah login
+				<li><a href="#"><i class="material-icons">chat_bubble_outline</i></a></li>
+				<li><a href="#"><i class="material-icons">favorite_border</i></a></li>
+				<li><img src="images/pp.png" alt="pp" class="circle responsive-img limit dropdown-trigger" data-target="dropdown1"></li> -->
+
+				<li>
+					<a class="modal-trigger" href="#modal2" ><b>Sign Up</b></a>
+				</li>
+				<li>
+					<a class="modal-trigger" href="#modal1" ><b>Login</b></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Modal Trigger
+
+	Modal Structure -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4 class="center">Login</h4>
+			<div class="container">
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<a class="btn-flat cyan darken-2 white-text" style="width:100%;" id="loginfb"><i class="fa fa-facebook"></i> &nbsp; <b>Login with facebook</b></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<a class="btn-flat cyan darken-2 white-text" style="width:100%;" id="loginfb"><i class="fa fa-google"></i> &nbsp; <b>Login with google</b></a>
+					</div>
+				</div>
+				<li class="divider"></li>
+				<br>
+				<div class="row">
+					<div class="col l12 s12">
+						<div class="bord2">
+							<form>
+								<input name="email" id="emaillogin" type="text" placeholder="Email Address">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12">
+						<div class="bord2">
+							<form>
+								<input name="pass" id="passlogin" type="text" placeholder="Password">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col 16 s6">
+						<label>
+							<input type="checkbox" class="filled-in" checked="checked" />
+							<span>Remember me</span>
+						</label>
+					</div>
+					<div class="col 16 s6 right-align">
+						<a>Show Password</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12">
+						<center><a href="#!" class="modal-close grad white-text btn-flat" style="width:100%;"><b>Login</b></a></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<a>Forgot password?</a>
+					</div>
+				</div>
+				<li class="divider"></li>
+				<br>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						Don't have an account? <a href="#modal2" class="modal-close modal-trigger">Signup</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal2" class="modal">
+		<div class="modal-content">
+			<h4 class="center">Signup</h4>
+			<div class="container">
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						Signup with <a>Facebook</a> or <a>Google</a>
+					</div>
+				</div>
+				<li class="divider"></li>
+				<br>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<div class="bord2">
+							<form>
+								<input name="email" id="emailsignup" type="text" class="geser2" placeholder="Email Address">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<div class="bord2">
+							<form>
+								<input name="first_name" id="fnamesignup" type="text" placeholder="First Name">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<div class="bord2">
+							<form>
+								<input name="last_name" id="lnamesignup" type="text" placeholder="Last Name">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						<div class="bord2">
+							<form>
+								<input name="pass" id="passsignup" type="text" placeholder="Create Password">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 right-align">
+						<a>Show Password</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 right-align">
+						<center><a href="#!" class="modal-close grad white-text btn-flat" style="width:100%;"><b>Signup</b></a></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						By signing up you agree to Lokapoin <a>terms and privacy policy</a>
+					</div>
+				</div>
+				<li class="divider"></li>
+				<br>
+				<div class="row">
+					<div class="col l12 s12 center-align">
+						Already have a Lokapoin account? <a class="modal-trigger modal-close" href="#modal1">Login</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row tes">
+			<div class="col l2 s6 bayangan">
+				<div class="center-align">
+					<br>
+					<center>
+						<img class="circle responsive-img" width="50%" height="50%" src="images/pp.png" alt="iki gambar">
+					</center>
+					<p>Username
+						<br>@username
+					</p>
+					<br>
+				</div>
+				<p>My Account</p>
+				<p>My Trip</p>
+				<p>Message</p>
+				<p>Wishlist</p>
+				<p>Settings</p>
+				<br>
+				<br>
+				<br>
+				<p>Get Help</p>
+				<p>Logout</p>
+			</div>
+			<div class="col l10 s6">
+				<div class="container">
+					<h4 class="header orange-text">My Profile</h4>
+					<div class="col l12 s12">
+						<div class="card white">
+							<div class="card-content">
+								<span class="card-title orange-text"><b>Profile</b></span>
+								<div class="container">
+									<form>
+										<label class="grey-text" for="first_name"><h6>First Name :</h6></label>
+										<input type="text" class="black-text" id="first_name" name="first_name" value="Loka">
+										<label class="grey-text" for="last_name"><h6>Last Name :</h6></label>
+										<input type="text" class="black-text" id="last_name" name="last_name" value="Poin">
+										<label class="grey-text" for="iam"><h6>I am :</h6></label>
+										<input type="text" class="black-text" id="iam" name="iam" value="Best Travel Startup!">
+										<label class="grey-text" for="date"><h6>Birthdate :</h6></label>
+										<input type="date" class="black-text" id="date" name="date" value="01/01/2018">
+										<label class="grey-text" for="email"><h6>Email Address</h6></label>
+										<input type="email" class="black-text" id="email" name="email" value="lokapoin@gmail.com">
+										<label class="grey-text" for="phone"><h6>Phone Number :</h6></label>
+										<input type="text" class="black-text" id="phone" name="phone" value="021123123">
+										<label class="grey-text" for="desc"><h6>Describe Yourself :</h6></label>
+										<input type="text" class="black-text" id="desc" name="desc" value="lokapoin.com">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="javascripts/materialize.js"></script>
+	<script src="javascripts/init.js"></script>
+</body>

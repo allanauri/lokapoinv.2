@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title
+			| Lokapoin - Lokapoin Indonesia
+		// CSS
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(href='stylesheets/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+	body
+		ul#dropdown1.dropdown-content
+			li
+				a(href='/') Home
+			li
+				a(href='profile') Profile
+			li.divider
+			li
+				a(href='logout') Logout
+		nav
+			.nav-wrapper.white
+				a.brand-logo.left(href='/')
+					img.logo(src='images/logo2.jpeg', alt='Logo')
+				ul#nav-mobile.sidenav
+					li
+						a.orange-text.text-darken-3(href='#!') Home
+					li.divider
+					li
+						a.orange-text.text-darken-3(href='#!') My Booking
+					li.divider
+					li
+						a.orange-text.text-darken-3(href='#!') My Inbox
+					li.divider
+					li
+						a.orange-text.text-darken-3(href='#!') About us
+				a.sidenav-trigger.right(href='#', data-target='nav-mobile')
+					i.material-icons menu
+				ul.right.hide-on-med-and-down
+					li
+						a(href='#')
+							i.material-icons search
+					li
+						a(href='#')
+							i.material-icons chat_bubble_outline
+					li
+						a(href='#')
+							i.material-icons favorite_border
+					li
+						img.circle.responsive-img.limit.dropdown-trigger(src='images/pp.png', alt='pp', data-target='dropdown1')
+
+	block content

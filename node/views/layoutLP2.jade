@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title
+			| Lokapoin - Lokapoin Indonesia
+		// CSS
+		link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+		link(href='stylesheets/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+	body
+		// Modal Structure
+		.parallax-container
+			.brand-logo.left
+				a(href='/')
+					img.logo(src='images/logo.png', alt='Logo')
+			ul.right.hide-on-med-and-down.geser
+				li
+					a.white-text.modal-trigger(href='profile')
+						b Profile &nbsp;
+					a.white-text.modal-trigger(href='account')
+						b Account  &nbsp;
+					a.white-text(href='logout')
+						b Logout
+			.parallax
+				img(src='images/lokapoin_banner.png')
+		.parallax-container2.valign-wrapper.grad
+			.section.no-pad-bot
+				.container
+					.row.center.hide-on-med-and-up
+						.col.s6
+							a.white-text.modal-trigger(href='profile')
+								b Welcome
+						.col.s6
+							a.white-text.modal-trigger(href='account')
+								b= user.email
+					.row.center.hide-on-med-and-down
+						.col.l2
+						.col.l1
+							h6 WHERE
+						.col.l2.bord1
+							form
+								input#kemana.white-text(type='text')
+						.col.l1
+							h6 WHEN
+						.col.l2.bord1
+							form
+								input#kapan.white-text(type='text')
+						#search.col.l2.orange.white-text
+							.input-field
+								b Search
+						br
+	block content

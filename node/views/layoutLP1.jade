@@ -11,53 +11,7 @@ html(lang='en')
 		link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 	body
-		//
-			Dropdown Structure
-			<ul id="dropdown1" class="dropdown-content">
-			<li><a href="#!">one</a></li>
-			<li><a href="#!">two</a></li>
-			<li class="divider"></li>
-			<li><a href="#!">three</a></li>
-			</ul>
-		nav
-			.nav-wrapper.white
-				a.brand-logo.left(href='/')
-					img.logo(src='images/logo2.jpeg', alt='Logo')
-				ul#nav-mobile.sidenav
-					li
-						a.orange-text.text-darken-3.modal-trigger(href='#modal1') Login
-					li.divider
-					li
-						a.orange-text.text-darken-3.modal-trigger(href='#modal2') Sign Up
-					//
-						sudah login
-						<li><a class="orange-text text-darken-3" href="#!">Home</a></li>
-						<li class="divider"></li>
-						<li><a class="orange-text text-darken-3" href="#!">My Booking</a></li>
-						<li class="divider"></li>
-						<li><a class="orange-text text-darken-3" href="#!">My Inbox</a></li>
-						<li class="divider"></li>
-						<li><a class="orange-text text-darken-3" href="#!">About us</a></li>
-				a.sidenav-trigger.right(href='#', data-target='nav-mobile')
-					i.material-icons menu
-				ul.right.hide-on-med-and-down
-					li
-						a(href='#')
-							i.material-icons search
-					//
-						Sudah login
-						<li><a href="#"><i class="material-icons">chat_bubble_outline</i></a></li>
-						<li><a href="#"><i class="material-icons">favorite_border</i></a></li>
-						<li><img src="images/pp.png" alt="pp" class="circle responsive-img limit dropdown-trigger" data-target="dropdown1"></li>
-					li
-						a.modal-trigger(href='#modal2')
-							b Sign Up
-					li
-						a.modal-trigger(href='#modal1')
-							b Login
-		//
-			Modal Trigger
-			Modal Structure
+		// Modal Structure
 		#modal1.modal
 			.modal-content
 				h4.center Login
@@ -69,7 +23,7 @@ html(lang='en')
 								b Login with facebook
 					.row
 						.col.l12.s12.center-align
-							a#loginfb.btn-flat.cyan.darken-2.white-text(style='width:100%;')
+							a#logingoogle.btn-flat.cyan.darken-2.white-text(style='width:100%;')
 								i.fa.fa-google &nbsp; &nbsp;
 								b Login with google
 					li.divider
@@ -78,16 +32,16 @@ html(lang='en')
 						.col.l12.s12
 							.bord2
 								form
-									input#emaillogin(name='email', placeholder='Email Address', type='text')
+									input#emaillogin(name='email', type='text', placeholder='Email Address')
 					.row
 						.col.l12.s12
 							.bord2
 								form
-									input#passlogin(name='pass', placeholder='Password', type='text')
+									input#passlogin(name='pass', type='text', placeholder='Password')
 					.row
 						.col.16.s6
 							label
-								input.filled-in(checked='checked', type='checkbox')
+								input.filled-in(type='checkbox', checked='checked')
 								span Remember me
 						.col.16.s6.right-align
 							a Show Password
@@ -121,22 +75,22 @@ html(lang='en')
 						.col.l12.s12.center-align
 							.bord2
 								form
-									input#emailsignup.geser2(name='email', placeholder='Email Address', type='text')
+									input#emailsignup.geser2(name='email', type='text', placeholder='Email Address')
 					.row
 						.col.l12.s12.center-align
 							.bord2
 								form
-									input#fnamesignup(name='first_name', placeholder='First Name', type='text')
+									input#fnamesignup(name='first_name', type='text', placeholder='First Name')
 					.row
 						.col.l12.s12.center-align
 							.bord2
 								form
-									input#lnamesignup(name='last_name', placeholder='Last Name', type='text')
+									input#lnamesignup(name='last_name', type='text', placeholder='Last Name')
 					.row
 						.col.l12.s12.center-align
 							.bord2
 								form
-									input#passsignup(name='pass', placeholder='Create Password', type='text')
+									input#passsignup(name='pass', type='text', placeholder='Create Password')
 					.row
 						.col.l12.s12.right-align
 							a Show Password
@@ -155,5 +109,44 @@ html(lang='en')
 						.col.l12.s12.center-align
 							| Already have a Lokapoin account?
 							a.modal-trigger.modal-close(href='#modal1') Login
-
+		.parallax-container
+			.brand-logo.left
+				a(href='/')
+					img.logo(src='images/logo.png', alt='Logo')
+			ul.right.hide-on-med-and-down.geser
+				li
+					a.white-text(href='#')
+						b Become a Host &nbsp;
+					a.white-text.modal-trigger(href='#modal2')
+						b Signup &nbsp;
+					a.white-text.modal-trigger(href='#modal1')
+						b Login
+			.parallax
+				img(src='images/lokapoin_banner.png')
+		.parallax-container2.valign-wrapper.grad
+			.section.no-pad-bot
+				.container
+					.row.center.hide-on-med-and-up
+						.col.s6
+							a.white-text.modal-trigger(href='#modal2')
+								b Signup
+						.col.s6
+							a.white-text.modal-trigger(href='#modal1')
+								b Login
+					.row.center.hide-on-med-and-down
+						.col.l2
+						.col.l1
+							h6 WHERE
+						.col.l2.bord1
+							form
+								input#kemana.white-text(type='text')
+						.col.l1
+							h6 WHEN
+						.col.l2.bord1
+							form
+								input#kapan.white-text(type='text')
+						#search.col.l2.orange.white-text
+							.input-field
+								b Search
+						br
 	block content
