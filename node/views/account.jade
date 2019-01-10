@@ -8,10 +8,7 @@ block content
 						br
 						center
 							img.circle.responsive-img(src='images/pp.png', alt='iki gambar', width='50%', height='50%')
-						p
-							| Username
-							br
-							| @username
+						p= user.name
 						br
 					p My Account
 					p My Trip
@@ -34,16 +31,16 @@ block content
 									form
 										label.grey-text(for='username')
 											h6 Username
-										input#username.black-text(name='username', value='username', type='text')
+										input#username.black-text(name='username', value= user.name, type='text')
 										label.grey-text(for='email')
 											h6 Email
 										input#email.black-text(name='email', value= user.email, type='email')
 										label.grey-text(for='date')
 											h6 Date of Birth
-										input#date.black-text(name='date', value='01/01/2018', type='date')
+										input#date.black-text(name='date', value= user.ttl, type='text')
 										label.grey-text(for='phone')
 											h6 Phone Number
-										input#phone.black-text(name='phone', value='021123123', type='text')
+										input#phone.black-text(name='phone', value= user.phone, type='text')
 								.card-action.center
 									a.grad.white-text.btn-flat(href='#')
 										b Edit Profile

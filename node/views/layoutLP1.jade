@@ -44,7 +44,7 @@ html(lang='en')
 								input.filled-in(type='checkbox', checked='checked')
 								span Remember me
 						.col.16.s6.right-align
-							a Show Password
+							a#showpass Show Password
 					.row
 						.col.l12.s12
 							center
@@ -93,11 +93,11 @@ html(lang='en')
 									input#passsignup(name='pass', type='text', placeholder='Create Password')
 					.row
 						.col.l12.s12.right-align
-							a Show Password
+							a#showpass2 Hide Password
 					.row
 						.col.l12.s12.right-align
 							center
-								a.modal-close.grad.white-text.btn-flat(href='#!', style='width:100%;')
+								a#register.modal-close.grad.white-text.btn-flat(href='#!', style='width:100%;')
 									b Signup
 					.row
 						.col.l12.s12.center-align
@@ -115,7 +115,7 @@ html(lang='en')
 					img.logo(src='images/logo.png', alt='Logo')
 			ul.right.hide-on-med-and-down.geser
 				li
-					a.white-text(href='#')
+					a.white-text(href='/house')
 						b Become a Host &nbsp;
 					a.white-text.modal-trigger(href='#modal2')
 						b Signup &nbsp;

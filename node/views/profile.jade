@@ -8,10 +8,7 @@ block content
 						br
 						center
 							img.circle.responsive-img(src='images/pp.png', alt='iki gambar', width='50%', height='50%')
-						p
-							| Username
-							br
-							| @username
+						p= user.name
 						br
 					p My Account
 					p My Trip
@@ -35,25 +32,25 @@ block content
 										form
 											label.grey-text(for='first_name')
 												h6 First Name :
-											input#first_name.black-text(name='first_name', value='Loka', type='text')
+											input#first_name.black-text(name=first_name, value= user.fname, type='text')
 											label.grey-text(for='last_name')
 												h6 Last Name :
-											input#last_name.black-text(name='last_name', value='Poin', type='text')
+											input#last_name.black-text(name=last_name, value= user.lname, type='text')
 											label.grey-text(for='iam')
 												h6 I am :
-											input#iam.black-text(name='iam', value='Best Travel Startup!', type='text')
+											input#iam.black-text(name='iam', value= user.job, type='text')
 											label.grey-text(for='date')
 												h6 Birthdate :
-											input#date.black-text(name='date', value='01/01/2018', type='date')
+											input#date.black-text(name='date', value= user.ttl, type='text')
 											label.grey-text(for='email')
 												h6 Email Address
 											input#email.black-text(name='email', value= user.email, type='email')
 											label.grey-text(for='phone')
 												h6 Phone Number :
-											input#phone.black-text(name='phone', value='021123123', type='text')
+											input#phone.black-text(name='phone', value= user.phone, type='text')
 											label.grey-text(for='desc')
 												h6 Describe Yourself :
-											input#desc.black-text(name='desc', value='lokapoin.com', type='text')
+											input#desc.black-text(name='desc', value= user.desc, type='text')
 		script(src='https://code.jquery.com/jquery-2.1.1.min.js')
 		script(src='javascripts/materialize.js')
 		script(src='javascripts/init.js')
