@@ -19,7 +19,8 @@ block content
 					br
 					br
 					p Get Help
-					p Logout
+					p
+						a.black-text(href="/logout") Logout
 				.col.l10.s6
 					.container
 						h4.header.orange-text Account Overview
@@ -31,18 +32,19 @@ block content
 									form
 										label.grey-text(for='username')
 											h6 Username
-										input#username.black-text(name='username', value= user.name, type='text')
+										input#username.black-text(name='username', value= user.name, type='text' disabled='true')
 										label.grey-text(for='email')
 											h6 Email
-										input#email.black-text(name='email', value= user.email, type='email')
+										input#email.black-text(name='email', value= user.email, type='email' disabled='true')
 										label.grey-text(for='date')
 											h6 Date of Birth
-										input#date.black-text(name='date', value= user.ttl, type='text')
+										input#date.black-text(name='date', value= user.ttl, type='date' disabled='true')
 										label.grey-text(for='phone')
 											h6 Phone Number
-										input#phone.black-text(name='phone', value= user.phone, type='text')
+										input#phone.black-text(name='phone', value= user.phone, type='text' disabled='true')
+										input#id(name='id', value= user.id, type='number' hidden='true')
 								.card-action.center
-									a.grad.white-text.btn-flat(href='#')
+									a#editprofile.grad.white-text.btn-flat
 										b Edit Profile
 						.col.l6.s12
 							.card.white
@@ -63,4 +65,6 @@ block content
 								.card-action
 		script(src='https://code.jquery.com/jquery-2.1.1.min.js')
 		script(src='javascripts/materialize.js')
+		script(src='javascripts/jquery.redirect.js')
 		script(src='javascripts/init.js')
+		script(src='javascripts/account.js')

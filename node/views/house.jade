@@ -1,88 +1,91 @@
 extends layout
 
+
 block content
     .container-fluid
       .row
         .col.l3.s6
           .card
             .card-content
-              p Lokavibe
-              h5 Lentera Houses and Villa
+              p= result.jenis_rumah
+              h5= result.nama_rumah
               li.divider
               br
               p
                 i.material-icons location_on
-                |                  Cisarua, Lembang, Bandung
+                b= result.location
               p
                 i.material-icons vpn_key
-                |                  3 unit Entire House
+                b= result.kuota + ' unit Entire House'
               p
                 i.material-icons person
-                |                  12 guests
+                b= result.capacity + ' guests'
               p.center.orange-text
-                | Urban Farming Introduction
+                b= result.activity
               p
                 | Dates
               .bord3
                 form
-                  input(name='date', type='date')
+                  input#date(name='date', type='date')
               p
                 | Guests
               .bord3
                 form
-                  input(name='tamu', value='1', type='number')
+                  input.center(name='tamu', value='1', type='number')
               br
               p.right
-                | Starts from
-                b Rp 400,000
+                | Starts from IDR
+                b= result.harga
               br
             .card-action
               #search.grad.white-text
                 .input-field
-                  h5.center Request to book
+                  h5#book.center.white-text Request to book
         .col.l9.s6.padtop
-          .col.l6.s12
-            iframe(src='https://www.youtube.com/embed/e0GhMjyXfls', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='', width='100%', height='450', frameborder='0')
-          .col.l6.s12.center
-            img.responsive-img(src='images/rumah1.jpg', alt='gambar', width='47%')
-            img.responsive-img(src='images/rumah1.jpg', alt='gambar', width='47%')
-            img.responsive-img(src='images/rumah1.jpg', alt='gambar', width='47%')
-            img.responsive-img(src='images/rumah1.jpg', alt='gambar', width='47%')
+          .row
+            .col.l6.s12
+              iframe(src= result.video_url , allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='', width='100%', height='450', frameborder='0')
+            .col.l6.s12.center
+              - for (var i = 1; i <= 4; ++i) {
+                img.responsive-img.itemrmh(src='images/product_thumb/rumah'+ result.id_rumah + '_' + i +'.jpg',alt='Not Available')
+              - }
           .row
             .col.l6.s6
               h6
                 b Entire House
-              p 12 Guests 3 House 6 Bedroom 12 Beds 3 Baths
+              p= result.capacity + ' Guests ' + result.kuota + ' House'
             .col.l6.s6
               h6
-                b Lentera House and Villa
-              p Lorem ipsum dolor sit amet
+                b= result.nama_rumah
+              p= desc
           .row
             .col.l6.s6
               h6
                 b Facilities
-              p 12 Guests 3 House 6 Bedroom 12 Beds 3 Baths
+              p= result.facilities
             .col.l6.s6
               h6
                 b Meet the Host
-              p Lorem ipsum dolor sit amet
+              p= result.host_desc
           .row
             .col.l6.s6
               h6
                 b Activity
               h6
-                b Urban Farming Introduction
-              p 12 Guests 3 House 6 Bedroom 12 Beds 3 Baths
+                p= result.activity
           .row
-            .col.l12.s12.left
+            .col.l6.s6
               h6
                 b Availability
-              input.datepicker(placeholder='click here', type='text')
+              input#tanggalan.datepicker(placeholder='click here', type='text')
+            .col.l6.s6
+              #cekava
           .row
             .col.l12.s12.left
               h6
                 b Location
-              iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63384.94121528505!2d107.5137023500878!3d-6.823385937484378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e25c4b5a215f%3A0x401e8f1fc28c640!2sCisarua%2C+West+Bandung+Regency%2C+West+Java!5e0!3m2!1sen!2sid!4v1547139873097', style='border:0', allowfullscreen='', width='100%', height='450', frameborder='0')
+              iframe(src= result.maps_url, style='border:0', allowfullscreen='', width='100%', height='450', frameborder='0')
+              input#id_rumah(value= result.id_rumah ,type="number", hidden=true)
     br
     .divider
     footer.page-footer.white
@@ -130,3 +133,4 @@ block content
     script(src='javascripts/materialize.js')
     script(src='javascripts/init.js')
     script(src='javascripts/login.js')
+    script(src='javascripts/house.js')

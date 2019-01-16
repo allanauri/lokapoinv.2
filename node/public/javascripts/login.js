@@ -25,7 +25,8 @@
         email: email,
         pass: password
       }, function(data){
-        $.redirect("/", {email: email, pass: password}, "POST");
+        //$.redirect("/", {email: email, pass: password}, "POST");
+        window.location.replace("/");
       });
     });
 

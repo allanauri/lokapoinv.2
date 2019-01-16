@@ -11,14 +11,6 @@ html(lang='en')
 		link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
 	body
-		//
-			Dropdown Structure
-			<ul id="dropdown1" class="dropdown-content">
-			<li><a href="#!">one</a></li>
-			<li><a href="#!">two</a></li>
-			<li class="divider"></li>
-			<li><a href="#!">three</a></li>
-			</ul>
 		nav
 			.nav-wrapper.white
 				a.brand-logo.left(href='/')
@@ -29,15 +21,6 @@ html(lang='en')
 					li.divider
 					li
 						a.orange-text.text-darken-3.modal-trigger(href='#modal2') Sign Up
-					//
-						sudah login
-						<li><a class="orange-text text-darken-3" href="#!">Home</a></li>
-						<li class="divider"></li>
-						<li><a class="orange-text text-darken-3" href="#!">My Booking</a></li>
-						<li class="divider"></li>
-						<li><a class="orange-text text-darken-3" href="#!">My Inbox</a></li>
-						<li class="divider"></li>
-						<li><a class="orange-text text-darken-3" href="#!">About us</a></li>
 				a.sidenav-trigger.right(href='#', data-target='nav-mobile')
 					i.material-icons menu
 				ul.right.hide-on-med-and-down
@@ -94,7 +77,7 @@ html(lang='en')
 					.row
 						.col.l12.s12
 							center
-								a#login.modal-close.grad.white-text.btn-flat(href='#!', style='width:100%;')
+								a#login.modal-close.grad.white-text.btn-flat(style='width:100%;')
 									b Login
 					.row
 						.col.l12.s12.center-align
@@ -143,7 +126,7 @@ html(lang='en')
 					.row
 						.col.l12.s12.right-align
 							center
-								a#register.modal-close.grad.white-text.btn-flat(href='#!', style='width:100%;')
+								a#register.modal-close.grad.white-text.btn-flat(style='width:100%;')
 									b Signup
 					.row
 						.col.l12.s12.center-align

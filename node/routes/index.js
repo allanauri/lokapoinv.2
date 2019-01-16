@@ -56,6 +56,7 @@ router.post('/', function(req, res, next) {
                 res.send("<script>window.alert('Password anda salah');window.location = '/';</script>");
               }
               else{
+                var id = guest.id_customer;
                 var email = guest.email_customer;
                 var name = guest.nama_customer;
                 var ttl = guest.ttl_customer;
@@ -65,6 +66,7 @@ router.post('/', function(req, res, next) {
                 var job = guest.job_customer;
                 var desc = guest.desc_customer;
                 const user = {
+                  id,
                   email,
                   name,
                   ttl,
