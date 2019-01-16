@@ -11,17 +11,28 @@
     $('#date').val(today);
 
     document.querySelector('#book').addEventListener('click', function (){
-      $.ajax({
-      	type: "post",
-      	url:  "/house",
-      	success: function(msg){
-            	alert(msg.alert);
-      	},
-      	error: function(XMLHttpRequest, textStatus, errorThrown) {
-         		alert("Username tidak terdaftar");
-    		    console.log(errorThrown);
-      	}
-      });
+      var date = $("#date").val();
+      var tamu = $("#tamu").val();
+      var nama_rumah = $("#nama_rumah").html();
+      var location = $("#location").html();
+      if(confirm('The book was right?')) {
+        $.ajax({
+        	type: "post",
+          data: {date: date, tamu: tamu, nama_rumah: nama_rumah, location: location},
+          dataType: "json",
+        	url:  "/house",
+        	success: function(msg){
+              	alert(msg.alert);
+        	},
+        	error: function(XMLHttpRequest, textStatus, errorThrown) {
+           		alert("Username tidak terdaftar");
+      		    console.log(errorThrown);
+        	}
+        });
+      }
+      else{
+        // do nothing
+      }
       //window.location.replace("/house/book");
     });
 

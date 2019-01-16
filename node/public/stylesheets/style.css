@@ -5,8 +5,19 @@
  *
  * Made By MaterializeCSS.com
  */
+.inputhost{
+  width: 25% !important;
+  border-bottom: 1px solid orange !important;
+  margin-left: 10px !important;
+}
+
 .itemrmh{
   width: 222px !important;
+  height: 222px !important;
+}
+
+.itemrmh2{
+  width: 325px !important;
   height: 222px !important;
 }
 

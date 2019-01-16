@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title
+      | Lokapoin - Lokapoin Indonesia
+    // CSS
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(href='stylesheets/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+    link(href='stylesheets/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    .container-fluid
+      .row
+        .col.l12.s12.center
+          h1 Wanna collaborate with us?
+          p Join Lokapoin circle and contribute more to local empowerement!
+          p You can leave your data here or contact us on: +628974945500
+          form.form
+            label(for='email') Email:
+            input#email.inputhost.orange-text(type='email', name='email', required)
+            br
+            label(for='nama') Nama Lengkap:
+            input#nama.inputhost.orange-text(type='text', name='nama', required)
+            br
+            label(for='alamat') Alamat:
+            input#alamat.inputhost.orange-text(type='text', name='alamat', required)
+            br
+            label(for='phone') No. Telp:
+            input#phone.inputhost.orange-text(type='text', name='phone', required)
+            br
+            label(for='nama_pro') Nama Properti:
+            input#nama_pro.inputhost.orange-text(type='text', name='nama_pro', required)
+            br
+            label(for='alamat_pro') Alamat Properti:
+            input#alamat_pro.inputhost.orange-text(type='text', name='alamat_pro', required)
+            br
+            br
+            a#submithost.btn-flat.orange.white-text Submit
+            br
+            br
+            a.orange-text(href="/") <-- &nbsp; Go Back
+
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='javascripts/materialize.js')
+    script(src='javascripts/jquery.redirect.js')
+    script(src='javascripts/init.js')
+    script(src='javascripts/host.js')

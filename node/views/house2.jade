@@ -3,7 +3,7 @@ extends layout2
 block content
     .container-fluid
       .row
-        .col.l3.s6
+        .col.l3.s12
           .card
             .card-content
               p= result.jenis_rumah
@@ -12,7 +12,7 @@ block content
               br
               p
                 i.material-icons location_on
-                b= result.location
+                b#location= result.location
               p
                 i.material-icons vpn_key
                 b= result.kuota + ' unit Entire House'
@@ -30,17 +30,17 @@ block content
                 | Guests
               .bord3
                 form
-                  input.center(name='tamu', value='1', type='number')
+                  input#tamu.center(name='tamu', value='1', type='number')
               br
               p.right
-                | Starts from IDR 
+                | Starts from IDR &nbsp;
                 b= result.harga
               br
             .card-action
               #search.grad.white-text
                 .input-field
                   h5#book.center.white-text Request to book
-        .col.l9.s6.padtop
+        .col.l9.s12.padtop
           .row
             .col.l6.s12
               iframe(src= result.video_url , allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='', width='100%', height='450', frameborder='0')
@@ -55,7 +55,7 @@ block content
               p= result.capacity + ' Guests ' + result.kuota + ' House'
             .col.l6.s6
               h6
-                b= result.nama_rumah
+                b#nama_rumah= result.nama_rumah
               p= desc
           .row
             .col.l6.s6
@@ -85,6 +85,8 @@ block content
                 b Location
               iframe(src= result.maps_url, style='border:0', allowfullscreen='', width='100%', height='450', frameborder='0')
               input#id_rumah(value= result.id_rumah ,type="number", hidden=true)
+              h3
+                a.center.black-text(href="/house") More Houses
     br
     .divider
     footer.page-footer.white
@@ -105,7 +107,7 @@ block content
           .col.l4.s12
             h5.black-text Joining Lokapoin
             p.black-text
-              | Become a Host
+              a.black-text(href="/host") Become a Host
           .col.l4.s12
             h5.black-text Our Social Media
             ul
@@ -114,17 +116,17 @@ block content
                   a.black-text(href='#!')
                     h6
                       i.fa.fa-instagram
-                      |   Lokapoin
+                      a.black-text(href="https://www.instagram.com/lokapoin/?hl=en") Lokapoin
                 li
                   a.black-text(href='#!')
                     h6
                       i.fa.fa-facebook
-                      |    Lokapoin
+                      a.black-text(href="https://www.facebook.com/lokapoin/") Lokapoin
                 li
                   a.black-text(href='#!')
                     h6
                       i.fa.fa-youtube
-                      |   Lokapoin
+                      a.black-text(href="https://www.youtube.com/channel/UCLzUP3QWCrO_nV2nomJb9vg") Lokapoin
       .footer-copyright
         .container.black-text
           center PT. Lokapoin Kreasi Indonesia

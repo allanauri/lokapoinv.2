@@ -7,5 +7,13 @@ module.exports = {
 
   getHouse: function(id){
     return knex('house').where('id_rumah',id).first();
+  },
+
+  getAllHouse: function(){
+    return knex('house');
+  },
+
+  getCatHouse: function(cat){
+    return knex('house').where('jenis_rumah',cat)
   }
 }
