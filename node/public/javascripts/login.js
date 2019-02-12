@@ -1,4 +1,19 @@
 (function($){
+
+  $('#emaillogin').on('keypress',function(e) {
+    if(e.which == 13) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  $('#passllogin').on('keypress',function(e) {
+    if(e.which == 13) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
   $(function(){
     document.querySelector('#showpass').addEventListener('click', function (){
       var x = document.getElementById("passlogin");
@@ -26,7 +41,11 @@
         pass: password
       }, function(data){
         //$.redirect("/", {email: email, pass: password}, "POST");
-        window.location.replace("/");
+        if(data.alert==undefined){
+          window.location.replace("/");
+        }else{
+          alert(data.alert);
+        }
       });
     });
 
